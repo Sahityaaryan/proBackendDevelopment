@@ -34,7 +34,7 @@
 
 
 ### In vite
-- (In vite we did it in vite.config.js)[https://vitejs.dev/config/server-options.html#server-proxy]
+- [In vite we did it in vite.config.js](https://vitejs.dev/config/server-options.html#server-proxy)
 
 ## cors (npm package)
 
