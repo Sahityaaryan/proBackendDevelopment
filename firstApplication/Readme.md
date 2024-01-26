@@ -28,6 +28,7 @@
 
 
 #### Problem without using proxy ?
+
 - `First benefit` Our forntend can be served at different ports which may be not in our control like if we deployed it on vercel then it will run it on its own port so whiteListing (tell your server already that which origin's request you have to accept and which not you can also mention which methods you can allow from which origin because before making any request there is a preflight request which contains "orign" , headers, of your request whcih goes to the server ) is not very optimal approach so we introudce a proxy a mask origin in our frontend, and by this whatever request we made if it doesn't contain any origin like ("   fetch("/api/login")  ") then it will search for that proxy origin to send the request on and as a proxy we will provide the server's origin.
 
 - `Second benefit` The server won't think that the request is coming from some other origin it will think that it is coming from it's own origin.
