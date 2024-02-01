@@ -2,6 +2,8 @@
 
 import mongoose from 'mongoose';
 
+const {Schema , model} = mongoose;
+
 // # example of a miniSchema
 
 const orderItemSchema = new mongoose.Schema({

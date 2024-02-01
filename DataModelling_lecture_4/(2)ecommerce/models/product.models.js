@@ -2,6 +2,9 @@
 
 import mongoose from 'mongoose';
 
+const {Schema , model} = mongoose;
+
+
 // creating Schema
 export const productschema = new mongoose.Schema(
     

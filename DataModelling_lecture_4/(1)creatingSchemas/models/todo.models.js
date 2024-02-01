@@ -3,8 +3,6 @@ import mongoose from 'mongoose';
 const {model , Schema} = mongoose;
 
 
-import { subTodoSchema } from './sub_todo.model';
-
 const todoschema = new Schema(
     {
         title:{
