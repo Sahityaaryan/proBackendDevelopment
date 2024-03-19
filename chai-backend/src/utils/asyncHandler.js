@@ -5,7 +5,7 @@
 
 /*
  * Questions;
- * 1. How we aer getting the "req,res,next" parameters?, according to me the function is accepted as parameter and a function 
+ * 1. How we are getting the "req,res,next" parameters?, according to me the function is accepted as parameter and a function 
  * is returned but the returning function has "req,res,next" parameters but it is the parameter required in the given function how can we 
  * pass it as an argument to any function which we are returning ?
  *
@@ -43,6 +43,11 @@ const asyncHandlerPromiseBySir = (requestHandler) =>{
 
 
 //* Wrapper function (try catch fashion)
+
+/**
+ * Now here the asyncHandlerTryCatch is a higher order function which is returning a function
+ * 
+ * */
 const asyncHandlerTryCatch = (func) => async (req,res,next) => {
 	
 	try{
